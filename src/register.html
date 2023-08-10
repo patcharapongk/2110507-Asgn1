@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg-[#F9F9F9] w-screen  ">
-  <div class="w-[90%] mx-auto my-2 flex min-h-screen flex-col justify-between ">
+  <div class="w-[90%] mx-auto my-2 flex min-h-screen flex-col justify-between gap-4 ">
     <header class="p-2 rounded-lg flex justify-between items-center">
       <a href="./index.html">
         <span class="text-4xl font-bold">Event<span class="text-[#0d6efd]">Info</span></span>
@@ -25,8 +25,53 @@
         <a href="./register.html" class="bg-[#0d6efd] text-white rounded-lg px-4 py-2 text-xl"> เช่าพื้นที่</a>
       </nav>
     </header>
-    <main class="">
+    <main class="flex justify-center items-start">
+      <form id="register-form" name="register" class="w-[40%] rounded-xl text-xl flex flex-col gap-6 bg-white p-8">
+        <div class="flex flex-col gap-2 ">
+          <label for="register-form-company-name"> ชื่อบริษัท </label>
+          <input class="rounded px-2 py-1 border border-blue-100" type="text" id="register-form-company-name"
+            name="Company Name" placeholder="เช่น บริษัท จำลองจุฬา จำกัดฯ" />
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <label for="register-form-booth-size"> ขนาดบูธ </label>
+          <select class="rounded px-2 py-1 border border-blue-100" type="text" id="register-form-booth-size"
+            name="Booth Size" form="register-form">
+            <option value="10x10"> 10 x 10 ฟุต </option>
+            <option value="10x15"> 10 x 15 ฟุต </option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <label class="py-2"> ความต้องการโต๊ะ </label>
+          <div class="pl-4">
+            <input type="radio" id="register-form-radio-required-table-yes" name="required-table" value="Yes"
+              form="register-form" />
+            <label for="register-form-radio-required-table-yes" class="font-light"> ต้องการโต๊ะ </label>
+          </div>
+          <div class="pl-4">
+            <input type="radio" id="register-form-radio-required-table-no" name="required-table" value="No"
+              form="register-form" checked />
+            <label for="register-form-radio-required-table-no" class="font-light"> ไม่ต้องการโต๊ะ </label>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <label for="register-form-chair-count"> จำนวนเก้าอี้ </label>
+          <input class="rounded px-2 py-1 border border-blue-100" type="number" id="register-form-chair-count"
+            name="Chair Count" placeholder="เช่น 3 ตัว" />
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <label for="register-form-person-name"> ชื่อผู้ติดต่อ </label>
+          <input class="rounded px-2 py-1 border border-blue-100" type="text" id="register-form-person-name"
+            name="Person Name" placeholder="เช่น นายสมศักดิ์ ใจดี" />
+        </div>
+        <div class="flex flex-col gap-2 ">
+          <label for="register-form-telephone-no"> เบอร์โทรศัพท์ </label>
+          <input class="rounded px-2 py-1 border border-blue-100" type="text" id="register-form-telephone-no"
+            name="Telephone No" placeholder="่เช่น 0912345678" />
+        </div>
+      </form>
     </main>
+    <div>
+    </div>
   </div>
   <footer class=" w-full min-h-[250px] rounded-t-lg mt-8 bg-slate-800 text-white
   flex justify-center items-center
