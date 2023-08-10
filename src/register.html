@@ -26,11 +26,13 @@
       </nav>
     </header>
     <main class="flex justify-center items-start">
-      <form id="register-form" name="register" class="w-[40%] rounded-xl text-xl flex flex-col gap-6 bg-white p-8">
+      <form id="register-form" name="register"
+        class="shadow-lg w-[40%] rounded-2xl text-xl flex flex-col gap-6 bg-white p-8">
+        <h1 class="text-4xl text-center font-bold"> ลงทะเบียนเช่าพื้นที่ </h1>
         <div class="flex flex-col gap-2 ">
           <label for="register-form-company-name"> ชื่อบริษัท </label>
           <input class="rounded px-2 py-1 border border-blue-100" type="text" id="register-form-company-name"
-            name="Company Name" placeholder="เช่น บริษัท จำลองจุฬา จำกัดฯ" />
+            name="Company Name" placeholder="เช่น บริษัท จำลองจุฬา จำกัด" />
         </div>
         <div class="flex flex-col gap-2 ">
           <label for="register-form-booth-size"> ขนาดบูธ </label>
@@ -67,6 +69,11 @@
           <label for="register-form-telephone-no"> เบอร์โทรศัพท์ </label>
           <input class="rounded px-2 py-1 border border-blue-100" type="text" id="register-form-telephone-no"
             name="Telephone No" placeholder="่เช่น 0912345678" />
+        </div>
+        <div class="flex flex-row justify-center gap-4">
+          <button class="text-black bg-white shadow-lg rounded-lg px-4 py-2 text-xl"> ล้างข้อมูล
+          </button>
+          <input class="bg-[#0d6efd] text-white shadow-lg rounded-lg px-4 py-2 text-xl" type="submit" value="ยืนยัน" />
         </div>
       </form>
     </main>
