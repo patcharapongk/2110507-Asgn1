@@ -538,14 +538,6 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -560,24 +552,28 @@ html {
   margin-top: 2rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
+.h-2 {
+  height: 0.5rem;
 }
 
-.h-\[95vh\] {
-  height: 95vh;
+.h-6 {
+  height: 1.5rem;
 }
 
-.h-\[80dvh\] {
-  height: 80dvh;
+.h-8 {
+  height: 2rem;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
+.h-12 {
+  height: 3rem;
 }
 
 .min-h-\[200px\] {
@@ -588,8 +584,16 @@ html {
   min-height: 100vh;
 }
 
-.w-\[70\%\] {
-  width: 70%;
+.min-h-\[250px\] {
+  min-height: 250px;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .w-\[90\%\] {
@@ -604,36 +608,24 @@ html {
   width: 100vw;
 }
 
-.w-\[65\%\] {
-  width: 65%;
+.w-\[1px\] {
+  width: 1px;
 }
 
-.w-\[35\%\] {
-  width: 35%;
+.w-\[9\.5px\] {
+  width: 9.5px;
 }
 
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
-}
-
-.max-w-\[900px\] {
-  max-width: 900px;
-}
-
-.max-w-full {
-  max-width: 100%;
-}
-
-.max-w-\[600px\] {
-  max-width: 600px;
+.w-\[0px\] {
+  width: 0px;
 }
 
 .max-w-\[500px\] {
   max-width: 500px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-col {
@@ -656,6 +648,10 @@ html {
   justify-content: space-between;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -673,6 +669,22 @@ html {
   border-top-right-radius: 0.5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
+}
+
+.border-l-\[1px\] {
+  border-left-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
 .bg-\[\#0d6efd\] {
   --tw-bg-opacity: 1;
   background-color: rgb(13 110 253 / var(--tw-bg-opacity));
@@ -688,8 +700,14 @@ html {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
-.p-6 {
-  padding: 1.5rem;
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -706,12 +724,25 @@ html {
   padding-bottom: 0.5rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
 
-.pt-6 {
-  padding-top: 1.5rem;
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -722,11 +753,6 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
