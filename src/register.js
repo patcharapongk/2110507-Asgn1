@@ -7,11 +7,15 @@ const form = document.getElementById("register-form");
 const companyName = document.getElementById("register-form-company-name");
 const contactName = document.getElementById("register-form-person-name");
 const telephoneNo = document.getElementById("register-form-telephone-no");
-const boothType = document.getElementById("register-form-booth-type");
+const boothType = document.getElementById("register-form-booth-size");
 const chairCount = document.getElementById("register-form-chair-count");
 
 function validateForm() {
-  if (!companyName.value || !contactName.value || !telephoneNo.value) {
+  if (
+    !companyName.value.trim() ||
+    !contactName.value.trim() ||
+    !telephoneNo.value.trim()
+  ) {
     alert("กรุณากรอกข้อมูลให้ครบถ้วน");
     return false;
   }
@@ -19,8 +23,16 @@ function validateForm() {
     alert("กรุณาเลือกขนาดบูธ");
     return false;
   }
-  if (chairCount.value < 1 || chairCount.value > 10) {
+  const chairValue = parseInt(chairCount.value, 10);
+  if (isNaN(chairValue) || chairValue < 1 || chairValue > 10) {
     alert("กรุณากรอกจำนวนเก้าอี้ระหว่าง 1 ถึง 10 ตัว");
     return false;
   }
+  return true; // Return true if all validations pass
 }
+
+form.addEventListener("submit", (e) => {
+  if (!validateForm()) {
+    e.preventDefault(); // Prevent the form from submitting if validation fails
+  }
+});
