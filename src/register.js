@@ -11,17 +11,16 @@ const boothType = document.getElementById("register-form-booth-type");
 const chairCount = document.getElementById("register-form-chair-count");
 
 function validateForm() {
-  // ืขื่่อบริษัท ชื่อผู้ติดต่อ และเบอร์ผู้ติดต่อ ห้ำมเป็นค่ำว่ำง
   if (!companyName.value || !contactName.value || !telephoneNo.value) {
     alert("กรุณากรอกข้อมูลให้ครบถ้วน");
     return false;
   }
-  if (boothType.value === "0") {
+  if (boothType.value === "") {
     alert("กรุณาเลือกขนาดบูธ");
     return false;
   }
   if (chairCount.value < 1 || chairCount.value > 10) {
-    alert("กรุณากรอกจำนวนเก้าอี้ให้ถูกต้อง");
+    alert("กรุณากรอกจำนวนเก้าอี้ระหว่าง 1 ถึง 10 ตัว");
     return false;
   }
 }
