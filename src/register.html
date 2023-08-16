@@ -72,9 +72,12 @@
             name="Telephone No" placeholder="่เช่น 0912345678" />
         </div>
         <div class="flex flex-row justify-center gap-4">
-          <button class="text-black bg-white shadow-lg rounded-lg px-4 py-2 text-xl"> ล้างข้อมูล
+          <button type="reset"
+            class="text-black bg-white  border border-solid border-black rounded-lg px-4 py-2 text-xl shadow-xl">
+            ล้างข้อมูล
           </button>
-          <input class="bg-[#0d6efd] text-white shadow-lg rounded-lg px-4 py-2 text-xl" type="submit" value="ยืนยัน" />
+          <input class="bg-[#0d6efd] text-white shadow-lg rounded-lg px-4 py-2 text-xl" type="submit" value="ยืนยัน"
+            onclick="validateForm();" />
         </div>
       </form>
     </main>
